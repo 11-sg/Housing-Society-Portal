@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+  background-image: url("https://media.istockphoto.com/id/1192403701/photo/residential-housing-background.jpg?s=170667a&w=0&k=20&c=zhkcCE8FDGtpuru_zRyfaUridSacvuIqk8GugdUcnUQ=");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#EBF4F6;
+    font-family: sans-serif;
+    background-color: #37B7C3;
+}
+.midpara{
+    padding: 5%;
+    font-size: 20px;
+}
+.bar{
+    width:100%;
+    height: 40px;
+    background-color: #45474B;
+}
+.barpara{
+    color:whitesmoke;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-left: 37%;
+}
+.sidebar {
+    position: absolute;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(202, 202, 202);
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+.sidebar li  {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 2px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+  }
+.sidebar ul  {
+    margin-right: 16px;
+  }
+#check {
+    display: none;
+  }
+label #btn , label #cancel{
+    position: absolute;
+    cursor: pointer;
+  }
+  label #btn{
+    left: 2px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    }
+label #btn:hover {
+    left: 7px;
+  }
+label #cancel{
+    z-index: 1111;
+    left: -250px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+  }
+  
+#check:checked ~ .sidebar{
+    left:0;
+  }
+  #check:checked ~ label #btn{
+    left:250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left:195px;
+  }
+a {
+  text-decoration:none;
+  color: black;
+  font-size: 15px;
+}
+#img{
+  height:2rem;
+  width: 2.2rem;
+  border-radius:50%;
+}
+.mid{
+  margin-left: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    width:35rem;
+    height:10rem;
+    background-color: lightgray;
+}
+.select{
+  font-size: 2rem;
+  display: flex;
+  justify-content:center; 
+}
+form label :hover{
+    cursor: pointer;
+    border-style: groove;
+    border-color: #F4CE14;
+    border-radius: 50rem;
+}
+form{
+  font-size: 1.5rem;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
