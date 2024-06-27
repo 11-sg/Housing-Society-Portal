@@ -2,35 +2,108 @@
     margin:0;
     padding:0;
 }
-body{
-  background-image: url("https://media.istockphoto.com/id/1192403701/photo/residential-housing-background.jpg?s=170667a&w=0&k=20&c=zhkcCE8FDGtpuru_zRyfaUridSacvuIqk8GugdUcnUQ=");
+.body1{
+  background-image: url("https://webstockreview.net/images/skyline-clipart-urban-design-10.png");
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
 }
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#EBF4F6;
-    font-family: sans-serif;
-    background-color: #37B7C3;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  padding-left:2rem;
+  background-color: white;
+  color:#729762;
+  height:3rem;
+}
+select{
+  border: none;
+}
+h1{
+  color:#254336;
+  padding-right: 40rem;
+  font-family: 'Poppins', 'sans-serif', 'Roboto';
+  font-weight: 900;
+}
+.dropbtn {
+  border:none;
+  background-color: white;
+  color: #658147;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color:green;  
+  padding-left: 2rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#login{
+  border: white;
+  background-color: white;
+  height:3rem;
+  width:4rem;
+  font-size: 1rem;
+}
+#login:hover{
+  cursor:pointer;
+  border-color: white;
+  background-color: black;
+  color:white;
+}
+.paramid{
+  padding-left: 5rem;
+  align-items: center;
+  width: 30%;
+  font-size: 1.2rem;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .midpara{
-    padding: 5%;
+  padding-top: 5rem;
     font-size: 20px;
+  
 }
 .bar{
     width:100%;
-    height: 40px;
-    background-color: #45474B;
+    height: 50px;
+    background-color: #729762;
 }
 .barpara{
     color:whitesmoke;
     font-size: 25px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 37%;
 }
+#welcome{
+  padding-left: 2rem;
+  padding-top: -4rem;
+  font-size: 3rem;
+  font-family: 'Poppins', 'sans-serif', 'Roboto';
+  font-weight: 900;
+}
+/* 
 .sidebar {
     position: absolute;
     left: -250px;
@@ -92,7 +165,7 @@ label #cancel{
   }
   #check:checked ~ label #cancel{
     left:195px;
-  }
+  } */
 a {
   text-decoration:none;
   color: black;
@@ -105,17 +178,15 @@ a {
 }
 .mid{
   margin-left: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content:center; 
     width:35rem;
     height:10rem;
-    background-color: lightgray;
+    background-color: rgba(89, 116, 69, 0.582);
+    border-radius: 2rem;
 }
 .select{
   font-size: 2rem;
-  display: flex;
-  justify-content:center; 
+  align-items: start; 
+  padding-left: 2rem;
 }
 form label :hover{
     cursor: pointer;
@@ -124,6 +195,8 @@ form label :hover{
     border-radius: 50rem;
 }
 form{
+  margin-left: 5rem;
+  padding: 2rem;
   font-size: 1.5rem;
   width: 300px;
   display: flex;
