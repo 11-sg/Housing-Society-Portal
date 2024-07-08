@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portal.css"/>
-    <title>Login</title>
+    <title>guard_management</title>
 </head>
 <body class="body1">
     <div class="header">
@@ -31,24 +31,34 @@
     <a href="login.html">
         <input type="button" id="login" value="Login" />
     </a>
-        
     </div>
+    
+    <div class="complaints">
+        <form action="portal.html" class="complaint" method="post">
 
-    <div class="mid1">
-        <div class="mid">
-            <div class="select">
-                <p><i>Register.....</i></p>
+            <div id="name1"> <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required size="20" />
+            </div> 
+
+            <br><br>
+            <div id="email1">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required size="50">
             </div>
-             <form>
-                 <label id="landlord"><input type="image" class="l" id="img" src="https://piramids.com/wp-content/uploads/2020/10/ic-property-ownership.png"/>
-                    LandLord
-                </label>
-                <label id="tenant"><input type="image" class="t" id="img" src="https://webstockreview.net/images/clipart-houses-keys-2.png"/>
-                    Tenant
-                </label>
-            </form>
+           
+            <br><br>
+            <div id="complaint1">
+                <label for="complaint">Complaint:</label><br>
+                <textarea type="text" id="complaint" name="complaint" required rows="5" cols="33"></textarea>
             </div>
+            
+            <br><br>
+            <div id="submit1">
+                <input type="submit" value="Submit">
+            </div>
+           
+        </form>
     </div>
-    <script src="portal.js"></script>
+    <script src="complaint.js"></script>
 </body>
 </html>
